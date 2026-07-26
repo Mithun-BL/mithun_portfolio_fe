@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --glow-color: rgba(124, 58, 237, 0.08); 
+  --tech-bg: #f8fafc;
+  --tech-grid: rgba(139, 92, 246, 0.08);
+  --tech-glow: rgba(139, 92, 246, 0.15);
+  --tech-text-glow: rgba(124, 58, 237, 0.2);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: 'Manrope', sans-serif;
+  --font-mono: var(--font-geist-mono);
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1240px;
+  --breakpoint-xl: 1320px;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  width: 100%;
+
+  @variant sm {
+    max-width: 640px;
+  }
+
+  @variant md {
+    max-width: 768px;
+  }
+
+  @variant lg {
+    max-width: 1240px;
+  }
+
+  @variant xl {
+    max-width: 1320px;
+  }
+}
+
+@utility btn_black {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 24px;
+  background-color: var(--foreground);
+  color: var(--background);
+  padding: 10px 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+@utility tech-stack-bg {
+  background-color: var(--tech-bg);
+  background-image: 
+    radial-gradient(circle at 50% 50%, var(--tech-glow) 0%, transparent 60%),
+    linear-gradient(to right, var(--tech-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--tech-grid) 1px, transparent 1px);
+  background-size: 100% 100%, 60px 60px, 60px 60px;
+  background-position: center center;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.dark {
+  --background: #030712;
+  --foreground: #ededed;
+  --glow-color: rgba(139, 92, 246, 0.15);
+  --tech-bg: #030712;
+  --tech-grid: rgba(139, 92, 246, 0.12);
+  --tech-glow: rgba(139, 92, 246, 0.25);
+  --tech-text-glow: rgba(139, 92, 246, 0.55);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Manrope', sans-serif;
+}
