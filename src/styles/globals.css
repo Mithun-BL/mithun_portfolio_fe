@@ -3,7 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --glow-color: rgba(124, 58, 237, 0.08); 
+  --glow-color: rgba(124, 58, 237, 0.08);
   --tech-bg: #f8fafc;
   --tech-grid: rgba(139, 92, 246, 0.08);
   --tech-glow: rgba(139, 92, 246, 0.15);
@@ -63,7 +63,7 @@
 
 @utility tech-stack-bg {
   background-color: var(--tech-bg);
-  background-image: 
+  background-image:
     radial-gradient(circle at 50% 50%, var(--tech-glow) 0%, transparent 60%),
     linear-gradient(to right, var(--tech-grid) 1px, transparent 1px),
     linear-gradient(to bottom, var(--tech-grid) 1px, transparent 1px);
@@ -87,4 +87,10 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Manrope', sans-serif;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 16px;
 }

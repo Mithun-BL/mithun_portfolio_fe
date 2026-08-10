@@ -47,7 +47,7 @@ export default function CodingJourney() {
             <div className="absolute top-1/3 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-purple-600/15 rounded-full blur-[140px] pointer-events-none z-0" />
             <div className="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-indigo-600/15 rounded-full blur-[120px] pointer-events-none z-0" />
 
-            <div className="container relative z-10 max-w-[1240px] mx-auto px-4 sm:px-6">
+            <div className="container relative z-10">
                 {/* Section Header */}
                 <div className="max-w-3xl mb-12 md:mb-16">
                     <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider text-purple-300 bg-purple-500/10 border border-purple-500/25 backdrop-blur-md mb-5 uppercase shadow-[0_0_20px_rgba(168,85,247,0.15)]">
