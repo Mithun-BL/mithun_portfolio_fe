@@ -33,7 +33,7 @@ const Footer = () => {
                 className="absolute bottom-[-100px] right-[10%] w-[350px] h-[350px] rounded-full blur-[130px] opacity-0 dark:opacity-[0.06] pointer-events-none transition-opacity duration-1000 bg-white"
             />
 
-            <div className="max-w-[1280px] mx-auto relative z-10">
+            <div className="container footer_container relative z-10">
                 {/* Top Part: Stunning CTA banner */}
                 <div
                     ref={ctaCardRef}

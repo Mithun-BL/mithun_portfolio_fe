@@ -13,7 +13,7 @@ interface ProjectDetailProps {
 export default function ProjectDetail({ project, prevProject, nextProject }: ProjectDetailProps) {
     return (
         <article className="py-10 md:py-20 relative overflow-hidden">
-            <div className="container max-w-5xl mx-auto px-4 sm:px-6">
+            <div className="container project_detail_container">
 
                 {/* Back to Projects Navigation */}
                 <div className="mb-8 md:mb-12">

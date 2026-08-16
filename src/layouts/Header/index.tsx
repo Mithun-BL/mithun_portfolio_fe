@@ -79,7 +79,7 @@ const Header = () => {
 
     return (
         <header className="fixed w-full top-0 z-50 mt-5">
-            <div className="container">
+            <div className="container header_container">
                 <nav className="flex justify-between md:grid md:grid-cols-3 items-center p-4 rounded-2xl bg-white/80 dark:bg-zinc-900/85 backdrop-blur-md border border-black/5 dark:border-white/10 shadow-lg transition-all duration-300">
                     {/* Logo Section */}
                     <div className="flex justify-start items-center">

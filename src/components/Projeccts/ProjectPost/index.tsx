@@ -5,7 +5,7 @@ import { projectsData } from "@/data/projects";
 export default function ProjectPost() {
     return (
         <section className="py-12 md:py-20 relative overflow-hidden">
-            <div className="container">
+            <div className="container project_post_container">
                 {/* Page Header */}
                 <div className="text-center max-w-[800px] mx-auto mb-16 md:mb-20">
                     <span className="text-xs md:text-sm font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 bg-blue-500/10 px-4 py-1.5 rounded-full border border-blue-500/20 mb-4 inline-block">

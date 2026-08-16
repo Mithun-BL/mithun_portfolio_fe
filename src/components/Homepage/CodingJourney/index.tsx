@@ -47,16 +47,16 @@ export default function CodingJourney() {
             <div className="absolute top-1/3 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-purple-600/15 rounded-full blur-[140px] pointer-events-none z-0" />
             <div className="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-indigo-600/15 rounded-full blur-[120px] pointer-events-none z-0" />
 
-            <div className="container relative z-10">
+            <div className="container coding_journey_container relative z-10">
                 {/* Section Header */}
                 <div className="max-w-3xl mb-12 md:mb-16">
-                    <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider text-purple-300 bg-purple-500/10 border border-purple-500/25 backdrop-blur-md mb-5 uppercase shadow-[0_0_20px_rgba(168,85,247,0.15)]">
+                    {/* <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider text-purple-300 bg-purple-500/10 border border-purple-500/25 backdrop-blur-md mb-5 uppercase shadow-[0_0_20px_rgba(168,85,247,0.15)]">
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-400"></span>
                         </span>
                         Milestones & Impact
-                    </span>
+                    </span> */}
 
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
                         Coding{" "}

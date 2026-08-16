@@ -54,7 +54,7 @@ const Skills = () => {
             {/* Glowing Central Aura Sphere */}
             {/* <div className=" bg-purple-600/10 dark:bg-purple-600/15 rounded-full blur-[80px] md:blur-[120px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0" /> */}
 
-            <div className="container relative z-10">
+            <div className="container skills_container relative z-10">
                 {/* Sleek Glowing Heading */}
                 <h2 className="text-center text-[40px] md:text-[64px] font-extrabold tracking-widest text-slate-800 dark:text-[#E8E6FF] drop-shadow-[0_0_30px_var(--tech-text-glow)] mb-16 uppercase">
                     Tech Stack

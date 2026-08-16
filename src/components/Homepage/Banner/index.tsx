@@ -6,7 +6,7 @@ export default function HomepageBanner() {
         <section className="relative overflow-hidden py-6 md:py-12 mb-[56px] md:mb-[100px]">
             {/* Glowing Decorative Backdrop Aura */}
 
-            <div className="container relative z-10">
+            <div className="container banner_container relative z-10">
                 <div className="text-center max-w-[950px] mx-auto">
                     {/* Modern Pulsing Badge */}
                     <span className="relative inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-black/10 dark:border-white/10 bg-black/[0.02] dark:bg-white/[0.02] text-xs md:text-sm font-semibold tracking-wide text-slate-800 dark:text-slate-200 backdrop-blur-md mb-8 hover:scale-[1.02] transition-transform duration-300">

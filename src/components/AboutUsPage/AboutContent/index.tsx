@@ -148,7 +148,7 @@ export default function AboutContent() {
 
     return (
         <section className="mb-16 px-4 md:px-8">
-            <div className="container max-w-[1200px] mx-auto">
+            <div className="container about_container">
                 {/* Section Header */}
                 <div className="text-center md:text-left mb-16">
                     <h6 className="text-xs tracking-[3px] font-bold text-violet-500 uppercase mb-3">ABOUT ME</h6>

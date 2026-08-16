@@ -68,7 +68,7 @@ export default function HomepageProjects() {
 
     return (
         <section ref={sectionRef} className="relative w-full bg-slate-50 dark:bg-[#08080a] text-slate-900 dark:text-white overflow-hidden transition-colors duration-300" id="Projects">
-            <div className="min-h-screen w-full flex flex-col justify-between py-4 sm:py-6 relative overflow-hidden">
+            <div className="projects_container min-h-screen w-full flex flex-col justify-between py-4 sm:py-6 relative overflow-hidden">
                 {/* Header Row */}
                 <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-6 sm:pt-8 pb-4 sm:pb-6 flex items-center justify-between relative z-10 border-b border-slate-300 dark:border-white/15">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white">
