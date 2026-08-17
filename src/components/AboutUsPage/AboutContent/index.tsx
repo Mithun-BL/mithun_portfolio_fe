@@ -54,6 +54,19 @@ function ImageSlider({ imageSrc = "/images/mithun_profile.png" }: ImageSliderPro
     return (
         <div
             ref={containerRef}
+            tabIndex={0}
+            role="slider"
+            aria-label="Image comparison slider"
+            aria-valuenow={Math.round(sliderPosition)}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            onKeyDown={(e) => {
+                if (e.key === 'ArrowLeft') {
+                    setSliderPosition((prev) => Math.max(0, prev - 5));
+                } else if (e.key === 'ArrowRight') {
+                    setSliderPosition((prev) => Math.min(100, prev + 5));
+                }
+            }}
             onMouseDown={(e) => {
                 setIsDragging(true);
                 handleMove(e.clientX);
@@ -62,7 +75,7 @@ function ImageSlider({ imageSrc = "/images/mithun_profile.png" }: ImageSliderPro
                 setIsDragging(true);
                 handleMove(e.touches[0].clientX);
             }}
-            className="relative w-full aspect-[4/5] max-w-[400px] rounded-3xl overflow-hidden border border-slate-200 dark:border-white/10 shadow-2xl select-none cursor-ew-resize group"
+            className="relative w-full aspect-[3/4] sm:aspect-[4/5] max-w-[420px] rounded-3xl overflow-hidden border border-slate-200 dark:border-white/10 shadow-2xl select-none cursor-ew-resize group touch-none focus:outline-none focus:ring-2 focus:ring-purple-500/50"
         >
             {/* Base Layer: Dark / Grayscale Image (Right Side) */}
             <div className="absolute inset-0 bg-slate-950 flex items-center justify-center overflow-hidden">
@@ -70,8 +83,9 @@ function ImageSlider({ imageSrc = "/images/mithun_profile.png" }: ImageSliderPro
                     src={imageSrc}
                     alt="Dark Profile"
                     fill
-                    sizes="(max-width: 768px) 100vw, 400px"
-                    className="object-cover filter grayscale contrast-125 brightness-50"
+                    quality={100}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 800px, 1000px"
+                    className="object-cover object-center filter grayscale contrast-125 brightness-50"
                     priority
                 />
                 <div className="absolute inset-0 bg-black/40 pointer-events-none" />
@@ -87,8 +101,9 @@ function ImageSlider({ imageSrc = "/images/mithun_profile.png" }: ImageSliderPro
                         src={imageSrc}
                         alt="Color Profile"
                         fill
-                        sizes="(max-width: 768px) 100vw, 400px"
-                        className="object-cover"
+                        quality={100}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 800px, 1000px"
+                        className="object-cover object-center"
                         priority
                     />
                 </div>
@@ -142,9 +157,6 @@ export default function AboutContent() {
 
     const textSecondary = isGlobalDark ? "text-gray-400" : "text-gray-600";
     const textMuted = isGlobalDark ? "text-gray-500" : "text-gray-400";
-    const cardBg = isGlobalDark
-        ? "bg-slate-950/40 border border-white/[0.06] shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]"
-        : "bg-slate-50 border border-black/[0.05] shadow-[0_10px_30px_rgba(0,0,0,0.01)]";
 
     return (
         <section className="mb-16 px-4 md:px-8">
@@ -167,35 +179,18 @@ export default function AboutContent() {
                     {/* Right Column: Personal Story and Stats */}
                     <div className="lg:col-span-7 flex flex-col gap-8">
                         <div className="flex flex-col gap-5 text-base md:text-lg leading-relaxed">
-                            <p className="font-semibold text-violet-500 dark:text-violet-400">
-                                Hello! I'm Mithun BL, a passionate web developer based in Bangalore, India. I specialize in crafting elegant, responsive, and performance-oriented web applications.
+                            <p className="font-semibold text-violet-600 dark:text-violet-400">
+                                Hello! I&apos;m Mithun BL, a dedicated Frontend Developer based in Bangalore, India, with 5+ years of hands-on experience creating modern, responsive, and performance-oriented web applications.
                             </p>
                             <p className={textSecondary}>
-                                With years of front-end experience, I bridge the gap between creative visual design and robust code architecture. My philosophy is simple: build interfaces that feel alive, load instantly, and are accessible to everyone.
+                                Throughout my 5 years in frontend engineering, I have specialized in turning complex UI/UX designs into pixel-perfect, interactive digital experiences. My tech stack includes <strong className="font-bold text-slate-900 dark:text-white">React.js</strong>, <strong className="font-bold text-slate-900 dark:text-white">Next.js</strong>, <strong className="font-bold text-slate-900 dark:text-white">TypeScript</strong>, <strong className="font-bold text-slate-900 dark:text-white">JavaScript</strong>, <strong className="font-bold text-slate-900 dark:text-white">Tailwind CSS</strong>, <strong className="font-bold text-slate-900 dark:text-white">Bootstrap</strong>, <strong className="font-bold text-slate-900 dark:text-white">jQuery</strong>, <strong className="font-bold text-slate-900 dark:text-white">HTML5</strong>, and <strong className="font-bold text-slate-900 dark:text-white">CSS3</strong>.
                             </p>
                             <p className={textSecondary}>
-                                I work extensively with **Next.js**, **React**, and modern CSS architectures to deliver interactive digital interfaces that keep users engaged. Whether it is custom layouts, web application dashboards, or parallax scroll portfolios, I bring structural precision and visual excellence to every line of code.
+                                I bridge the gap between creative visual design and robust code architecture. My approach focuses on building clean, scalable components, optimizing Core Web Vitals for instant load times, and ensuring seamless cross-browser accessibility.
                             </p>
                         </div>
 
-                        {/* Interactive Philosophy Grid */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
-                            <div className={`p-6 rounded-2xl ${cardBg} transition-all duration-300`}>
-                                <span className="text-xl mb-2 block">⚡</span>
-                                <h4 className="font-bold mb-1.5 text-sm">Interaction Focus</h4>
-                                <p className={`text-xs leading-normal ${textSecondary}`}>
-                                    Websites shouldn&apos;t just be static brochures. I build micro-interactions and scroll animations that make browsing a delightful user experience.
-                                </p>
-                            </div>
 
-                            <div className={`p-6 rounded-2xl ${cardBg} transition-all duration-300`}>
-                                <span className="text-xl mb-2 block">🎯</span>
-                                <h4 className="font-bold mb-1.5 text-sm">Performance First</h4>
-                                <p className={`text-xs leading-normal ${textSecondary}`}>
-                                    Clean build traces, optimized bundle splits, and image preloading translate into fast page render metrics and solid Core Web Vitals.
-                                </p>
-                            </div>
-                        </div>
 
                         {/* Direct contact details prompt */}
                         <div className="flex flex-wrap items-center gap-4 mt-2">

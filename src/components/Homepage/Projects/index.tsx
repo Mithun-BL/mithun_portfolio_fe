@@ -105,70 +105,45 @@ export default function HomepageProjects() {
                                                 />
                                             </div>
 
-                                            {/* Number & Title */}
-                                            <div className="flex items-start justify-between mb-2 sm:mb-3">
-                                                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tighter text-slate-900 dark:text-white">
+                                            {/* Number & Title (Stacked Vertically) */}
+                                            <div className="flex flex-col items-start gap-1 mb-4">
+                                                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tighter text-slate-900 dark:text-white mb-1">
                                                     {project.num}
                                                 </span>
-                                                <div className="text-right">
-                                                    <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-slate-900 dark:text-white mb-0.5">
-                                                        {project.title}
-                                                    </h3>
-                                                    <p className="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">
-                                                        {project.subtitle}
-                                                    </p>
-                                                </div>
+                                                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-slate-900 dark:text-white leading-tight">
+                                                    {project.title}
+                                                </h3>
+                                                <p className="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">
+                                                    {project.subtitle}
+                                                </p>
                                             </div>
 
-                                            {/* Tools and features */}
-                                            <div className="mt-auto pt-2">
-                                                <h4 className="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 mb-1">
-                                                    Tools and features
-                                                </h4>
-                                                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-3 sm:mb-4">
-                                                    {project.tags.join(", ")}
-                                                </p>
-
-                                                {/* GitHub Link */}
-                                                <div className="pt-2.5 sm:pt-3 border-t border-slate-200 dark:border-white/10 flex items-center justify-between">
-                                                    <Link
-                                                        href={project.link || "#"}
-                                                        target="_blank"
-                                                        className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-[#c084fc] transition-colors"
-                                                    >
-                                                        <span>GitHub Repository</span>
-                                                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 00-2 2h10a2 2 0 00-2-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                                                        </svg>
-                                                    </Link>
-                                                </div>
+                                            {/* Read More Link */}
+                                            <div className="mt-auto pt-3 border-t border-slate-200 dark:border-white/10 flex items-center justify-between">
+                                                <Link
+                                                    href={`/projects/${project.id}`}
+                                                    className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-[#c084fc] transition-colors"
+                                                >
+                                                    <span>Read More</span>
+                                                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                                    </svg>
+                                                </Link>
                                             </div>
                                         </>
                                     ) : (
                                         /* ODD INDEX (01, 03, 05): Text at top, Image at bottom */
                                         <>
-                                            {/* Number & Title */}
-                                            <div className="flex items-start justify-between mb-2 sm:mb-3">
-                                                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tighter text-slate-900 dark:text-white">
+                                            {/* Number & Title (Stacked Vertically) */}
+                                            <div className="flex flex-col items-start gap-1 mb-4">
+                                                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tighter text-slate-900 dark:text-white mb-1">
                                                     {project.num}
                                                 </span>
-                                                <div className="text-right">
-                                                    <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-slate-900 dark:text-white mb-0.5">
-                                                        {project.title}
-                                                    </h3>
-                                                    <p className="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">
-                                                        {project.subtitle}
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            {/* Tools and features */}
-                                            <div className="mb-3 sm:mb-4">
-                                                <h4 className="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 mb-1">
-                                                    Tools and features
-                                                </h4>
-                                                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                                                    {project.tags.join(", ")}
+                                                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-slate-900 dark:text-white leading-tight">
+                                                    {project.title}
+                                                </h3>
+                                                <p className="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">
+                                                    {project.subtitle}
                                                 </p>
                                             </div>
 
@@ -184,16 +159,15 @@ export default function HomepageProjects() {
                                                 />
                                             </div>
 
-                                            {/* GitHub Link */}
-                                            <div className="pt-2.5 sm:pt-3 border-t border-slate-200 dark:border-white/10 flex items-center justify-between">
+                                            {/* Read More Link */}
+                                            <div className="pt-3 border-t border-slate-200 dark:border-white/10 flex items-center justify-between">
                                                 <Link
-                                                    href={project.link || "#"}
-                                                    target="_blank"
+                                                    href={`/projects/${project.id}`}
                                                     className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-[#c084fc] transition-colors"
                                                 >
-                                                    <span>GitHub Repository</span>
+                                                    <span>Read More</span>
                                                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 00-2 2h10a2 2 0 00-2-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                                     </svg>
                                                 </Link>
                                             </div>
@@ -206,7 +180,6 @@ export default function HomepageProjects() {
                         {/* LAST CARD: Want to see more? */}
                         <div className="w-[88vw] sm:w-[400px] md:w-[450px] lg:w-[500px] xl:w-[550px] flex-shrink-0 h-full border-r border-slate-300 dark:border-white/15 p-5 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center relative bg-white/95 dark:bg-[#09090b]/90 overflow-hidden">
                             {/* Glowing Background Orb */}
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 sm:w-80 h-64 sm:h-80 bg-violet-500/10 dark:bg-[#c084fc]/15 rounded-full blur-3xl pointer-events-none" />
 
                             <div className="relative z-10 max-w-[380px] sm:max-w-[400px]">
                                 <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mb-4 sm:mb-6 leading-tight">
