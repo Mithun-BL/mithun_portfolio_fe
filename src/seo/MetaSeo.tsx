@@ -27,7 +27,7 @@ export const defaultMetadata: Metadata = {
         siteName: "Mithun BL Portfolio",
         images: [
             {
-                url: "https://mithunbl.vercel.app/og-image.png",
+                url: "https://mithunbl.vercel.app/images/mithun_profile.png",
                 width: 1200,
                 height: 630,
                 alt: "Mithun BL Portfolio",
@@ -41,7 +41,7 @@ export const defaultMetadata: Metadata = {
         title: "Mithun BL | A Passionate Web Developer",
         description:
             "A passionate web developer who loves to build creative and interactive websites.",
-        images: ["https://mithunbl.vercel.app/og-image.png"],
+        images: ["https://mithunbl.vercel.app/images/mithun_profile.png"],
     },
 };
 
