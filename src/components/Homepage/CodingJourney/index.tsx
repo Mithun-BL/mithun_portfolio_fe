@@ -2,7 +2,7 @@ export default function CodingJourney() {
     const stats = [
         {
             id: "experience",
-            number: "5+",
+            number: "5",
             label: "Years of Experience",
             description: "Building modern scalable web apps",
             icon: (
