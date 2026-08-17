@@ -71,7 +71,7 @@ export default function HomepageProjects() {
             <div className="projects_container min-h-screen w-full flex flex-col justify-between py-4 sm:py-6 relative overflow-hidden">
                 {/* Header Row */}
                 <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-6 sm:pt-8 pb-4 sm:pb-6 flex items-center justify-between relative z-10 border-b border-slate-300 dark:border-white/15">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white">
+                    <h2 className="text-[30px] sm:text-[36px] md:text-[48px] lg:text-[60px] font-bold tracking-tight text-slate-900 dark:text-white">
                         My Work
                     </h2>
                 </div>
@@ -107,13 +107,13 @@ export default function HomepageProjects() {
 
                                             {/* Number & Title (Stacked Vertically) */}
                                             <div className="flex flex-col items-start gap-1 mb-4">
-                                                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tighter text-slate-900 dark:text-white mb-1">
+                                                <span className="text-[36px] sm:text-[48px] md:text-[60px] lg:text-[72px] font-light tracking-tighter text-slate-900 dark:text-white mb-1">
                                                     {project.num}
                                                 </span>
-                                                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-slate-900 dark:text-white leading-tight">
+                                                <h3 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[30px] font-bold text-slate-900 dark:text-white leading-tight">
                                                     {project.title}
                                                 </h3>
-                                                <p className="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">
+                                                <p className="text-[12px] sm:text-[14px] font-medium text-slate-500 dark:text-slate-400">
                                                     {project.subtitle}
                                                 </p>
                                             </div>
@@ -122,7 +122,7 @@ export default function HomepageProjects() {
                                             <div className="mt-auto pt-3 border-t border-slate-200 dark:border-white/10 flex items-center justify-between">
                                                 <Link
                                                     href={`/projects/${project.id}`}
-                                                    className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-[#c084fc] transition-colors"
+                                                    className="inline-flex items-center gap-1.5 text-[12px] sm:text-[14px] font-semibold text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-[#c084fc] transition-colors"
                                                 >
                                                     <span>Read More</span>
                                                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -136,13 +136,13 @@ export default function HomepageProjects() {
                                         <>
                                             {/* Number & Title (Stacked Vertically) */}
                                             <div className="flex flex-col items-start gap-1 mb-4">
-                                                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tighter text-slate-900 dark:text-white mb-1">
+                                                <span className="text-[36px] sm:text-[48px] md:text-[60px] lg:text-[72px] font-light tracking-tighter text-slate-900 dark:text-white mb-1">
                                                     {project.num}
                                                 </span>
-                                                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-slate-900 dark:text-white leading-tight">
+                                                <h3 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[30px] font-bold text-slate-900 dark:text-white leading-tight">
                                                     {project.title}
                                                 </h3>
-                                                <p className="text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">
+                                                <p className="text-[12px] sm:text-[14px] font-medium text-slate-500 dark:text-slate-400">
                                                     {project.subtitle}
                                                 </p>
                                             </div>
@@ -163,7 +163,7 @@ export default function HomepageProjects() {
                                             <div className="pt-3 border-t border-slate-200 dark:border-white/10 flex items-center justify-between">
                                                 <Link
                                                     href={`/projects/${project.id}`}
-                                                    className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-[#c084fc] transition-colors"
+                                                    className="inline-flex items-center gap-1.5 text-[12px] sm:text-[14px] font-semibold text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-[#c084fc] transition-colors"
                                                 >
                                                     <span>Read More</span>
                                                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -182,16 +182,16 @@ export default function HomepageProjects() {
                             {/* Glowing Background Orb */}
 
                             <div className="relative z-10 max-w-[380px] sm:max-w-[400px]">
-                                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mb-4 sm:mb-6 leading-tight">
+                                <h3 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[48px] font-extrabold text-slate-900 dark:text-white mb-4 sm:mb-6 leading-tight">
                                     Want to see more?
                                 </h3>
-                                <p className="text-xs sm:text-sm md:text-base text-slate-600 dark:text-slate-400 font-medium mb-8 sm:mb-10 leading-relaxed">
+                                <p className="text-[12px] sm:text-[14px] md:text-[16px] text-slate-600 dark:text-slate-400 font-medium mb-8 sm:mb-10 leading-relaxed">
                                     Explore all of my projects and creations
                                 </p>
 
                                 <Link
                                     href="/projects"
-                                    className="inline-flex items-center gap-2 sm:gap-2.5 bg-violet-600 hover:bg-violet-700 text-white dark:bg-[#c084fc] dark:hover:bg-[#d8b4fe] dark:text-slate-950 text-sm sm:text-base font-bold py-3.5 px-7 sm:py-4 sm:px-8 rounded-full shadow-[0_10px_30px_rgba(139,92,246,0.3)] dark:shadow-[0_0_40px_rgba(192,132,252,0.6)] hover:scale-105 transition-all duration-300"
+                                    className="inline-flex items-center gap-2 sm:gap-2.5 bg-violet-600 hover:bg-violet-700 text-white dark:bg-[#c084fc] dark:hover:bg-[#d8b4fe] dark:text-slate-950 text-[14px] sm:text-[16px] font-bold py-3.5 px-7 sm:py-4 sm:px-8 rounded-full shadow-[0_10px_30px_rgba(139,92,246,0.3)] dark:shadow-[0_0_40px_rgba(192,132,252,0.6)] hover:scale-105 transition-all duration-300"
                                 >
                                     <span>See All Works</span>
                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

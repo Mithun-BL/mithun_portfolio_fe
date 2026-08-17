@@ -51,14 +51,14 @@ export default function CodingJourney() {
                 {/* Section Header */}
                 <div className="max-w-3xl mb-12 md:mb-16">
 
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                    <h2 className="text-[30px] sm:text-[36px] md:text-[48px] lg:text-[60px] font-extrabold tracking-tight text-white leading-[1.15]">
                         Coding{" "}
                         <span className="bg-gradient-to-r from-purple-400 via-indigo-300 to-violet-300 bg-clip-text text-transparent">
                             Journey
                         </span>
                     </h2>
 
-                    <p className="mt-4 text-base sm:text-lg text-slate-300 font-medium leading-relaxed">
+                    <p className="mt-4 text-[16px] sm:text-[18px] text-slate-300 font-medium leading-relaxed">
                         A quantitative snapshot of my software engineering growth, technical achievements, and dedication to crafting high-performance web applications.
                     </p>
 
@@ -87,13 +87,13 @@ export default function CodingJourney() {
 
                                 {/* Metric Number */}
                                 <div>
-                                    <h3 className="text-5xl sm:text-6xl font-extrabold tracking-tight text-white bg-gradient-to-r from-white via-purple-100 to-slate-200 bg-clip-text text-transparent group-hover:from-purple-300 group-hover:via-indigo-200 group-hover:to-white transition-all duration-500 mb-2">
+                                    <h3 className="text-[48px] sm:text-[60px] font-extrabold tracking-tight text-white bg-gradient-to-r from-white via-purple-100 to-slate-200 bg-clip-text text-transparent group-hover:from-purple-300 group-hover:via-indigo-200 group-hover:to-white transition-all duration-500 mb-2">
                                         {stat.number}
                                     </h3>
-                                    <h4 className="text-lg sm:text-xl font-bold text-slate-100 mb-1">
+                                    <h4 className="text-[18px] sm:text-[20px] font-bold text-slate-100 mb-1">
                                         {stat.label}
                                     </h4>
-                                    <p className="text-xs sm:text-sm text-slate-400 font-medium">
+                                    <p className="text-[12px] sm:text-[14px] text-slate-400 font-medium">
                                         {stat.description}
                                     </p>
                                 </div>

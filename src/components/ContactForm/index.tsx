@@ -87,10 +87,10 @@ export default function ContactForm() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7" />
                         </svg>
                     </div>
-                    <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+                    <h3 className="text-[24px] md:text-[30px] font-extrabold tracking-tight">
                         Thanks &quot;{submittedName}&quot;!
                     </h3>
-                    <p className="text-base text-gray-600 dark:text-gray-300 font-medium">
+                    <p className="text-[16px] text-gray-600 dark:text-gray-300 font-medium">
                         Will get back to you in a hours.
                     </p>
                     <button
@@ -98,7 +98,7 @@ export default function ContactForm() {
                             setIsSubmitted(false);
                             setSubmittedName("");
                         }}
-                        className="btn_black text-sm px-6 py-2.5 mt-4"
+                        className="btn_black text-[14px] px-6 py-2.5 mt-4"
                     >
                         Send Another Message
                     </button>
@@ -106,14 +106,14 @@ export default function ContactForm() {
             ) : (
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5">
                     {errorMessage && (
-                        <div className="p-3.5 rounded-xl bg-rose-500/10 border border-rose-500/20 text-rose-600 dark:text-rose-400 text-xs font-medium">
+                        <div className="p-3.5 rounded-xl bg-rose-500/10 border border-rose-500/20 text-rose-600 dark:text-rose-400 text-[12px] font-medium">
                             {errorMessage}
                         </div>
                     )}
 
                     {/* Name Field */}
                     <div>
-                        <label htmlFor="name" className="block text-xs font-bold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-2">
+                        <label htmlFor="name" className="block text-[12px] font-bold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-2">
                             Your Name <span className="text-rose-500">*</span>
                         </label>
                         <input
@@ -121,18 +121,17 @@ export default function ContactForm() {
                             type="text"
                             placeholder="John Doe"
                             {...register("name")}
-                            className={`w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border ${
-                                errors.name ? "border-rose-500" : "border-slate-200 dark:border-slate-800"
-                            } focus:outline-none focus:border-slate-400 dark:focus:border-slate-500 text-sm transition-all`}
+                            className={`w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border ${errors.name ? "border-rose-500" : "border-slate-200 dark:border-slate-800"
+                                } focus:outline-none focus:border-slate-400 dark:focus:border-slate-500 text-[14px] transition-all`}
                         />
                         {errors.name && (
-                            <p className="text-xs text-rose-500 mt-1.5 font-medium">{errors.name.message}</p>
+                            <p className="text-[12px] text-rose-500 mt-1.5 font-medium">{errors.name.message}</p>
                         )}
                     </div>
 
                     {/* Email Field */}
                     <div>
-                        <label htmlFor="email" className="block text-xs font-bold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-2">
+                        <label htmlFor="email" className="block text-[12px] font-bold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-2">
                             Your Email <span className="text-rose-500">*</span>
                         </label>
                         <input
@@ -140,22 +139,20 @@ export default function ContactForm() {
                             type="email"
                             placeholder="john@example.com"
                             {...register("email")}
-                            className={`w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border ${
-                                errors.email ? "border-rose-500" : "border-slate-200 dark:border-slate-800"
-                            } focus:outline-none focus:border-slate-400 dark:focus:border-slate-500 text-sm transition-all`}
+                            className={`w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border ${errors.email ? "border-rose-500" : "border-slate-200 dark:border-slate-800"
+                                } focus:outline-none focus:border-slate-400 dark:focus:border-slate-500 text-[14px] transition-all`}
                         />
                         {errors.email && (
-                            <p className="text-xs text-rose-500 mt-1.5 font-medium">{errors.email.message}</p>
+                            <p className="text-[12px] text-rose-500 mt-1.5 font-medium">{errors.email.message}</p>
                         )}
                     </div>
 
                     {/* Conditional Phone Field (Revealed when email has input) */}
                     <div
-                        className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                            showPhoneField ? "max-h-28 opacity-100 mt-1" : "max-h-0 opacity-0 pointer-events-none"
-                        }`}
+                        className={`transition-all duration-500 ease-in-out overflow-hidden ${showPhoneField ? "max-h-28 opacity-100 mt-1" : "max-h-0 opacity-0 pointer-events-none"
+                            }`}
                     >
-                        <label htmlFor="phone" className="block text-xs font-bold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-2">
+                        <label htmlFor="phone" className="block text-[12px] font-bold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-2">
                             Phone Number <span className="text-gray-400 font-normal lowercase">(optional)</span>
                         </label>
                         <input
@@ -163,13 +160,13 @@ export default function ContactForm() {
                             type="tel"
                             placeholder="+91 98765 43210"
                             {...register("phone")}
-                            className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 focus:outline-none focus:border-slate-400 dark:focus:border-slate-500 text-sm transition-all"
+                            className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 focus:outline-none focus:border-slate-400 dark:focus:border-slate-500 text-[14px] transition-all"
                         />
                     </div>
 
                     {/* Send Message Field */}
                     <div>
-                        <label htmlFor="message" className="block text-xs font-bold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-2">
+                        <label htmlFor="message" className="block text-[12px] font-bold uppercase tracking-wider text-gray-600 dark:text-gray-300 mb-2">
                             Send Message <span className="text-rose-500">*</span>
                         </label>
                         <textarea
@@ -177,12 +174,11 @@ export default function ContactForm() {
                             rows={5}
                             placeholder="Hello Mithun, I'd like to discuss a new project..."
                             {...register("message")}
-                            className={`w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border ${
-                                errors.message ? "border-rose-500" : "border-slate-200 dark:border-slate-800"
-                            } focus:outline-none focus:border-slate-400 dark:focus:border-slate-500 text-sm transition-all resize-none`}
+                            className={`w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border ${errors.message ? "border-rose-500" : "border-slate-200 dark:border-slate-800"
+                                } focus:outline-none focus:border-slate-400 dark:focus:border-slate-500 text-[14px] transition-all resize-none`}
                         />
                         {errors.message && (
-                            <p className="text-xs text-rose-500 mt-1.5 font-medium">{errors.message.message}</p>
+                            <p className="text-[12px] text-rose-500 mt-1.5 font-medium">{errors.message.message}</p>
                         )}
                     </div>
 
@@ -190,7 +186,7 @@ export default function ContactForm() {
                     <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="btn_black text-center text-sm w-full py-3.5 mt-2 hover:scale-[0.99] active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
+                        className="btn_black text-center text-[14px] w-full py-3.5 mt-2 hover:scale-[0.99] active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
                     >
                         {isSubmitting ? (
                             <>

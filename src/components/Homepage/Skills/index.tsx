@@ -83,7 +83,7 @@ const Skills = () => {
                     <div className="mt-8">
                         <button
                             onClick={() => setShowAll(!showAll)}
-                            className="group inline-flex items-center justify-center gap-2 px-6 py-2.5 text-xs font-semibold tracking-wider text-slate-700 dark:text-slate-200 bg-white/80 dark:bg-slate-900/80 border border-black/10 dark:border-white/10 rounded-full shadow-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300 uppercase cursor-pointer"
+                            className="group inline-flex items-center justify-center gap-2 px-6 py-2.5 text-[12px] font-semibold tracking-wider text-slate-700 dark:text-slate-200 bg-white/80 dark:bg-slate-900/80 border border-black/10 dark:border-white/10 rounded-full shadow-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300 uppercase cursor-pointer"
                         >
                             <span>{showAll ? 'View Less' : 'View More'}</span>
                             <svg

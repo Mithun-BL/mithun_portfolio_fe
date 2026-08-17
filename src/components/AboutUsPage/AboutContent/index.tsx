@@ -163,8 +163,8 @@ export default function AboutContent() {
             <div className="container about_container">
                 {/* Section Header */}
                 <div className="text-center md:text-left mb-16">
-                    <h6 className="text-xs tracking-[3px] font-bold text-violet-500 uppercase mb-3">ABOUT ME</h6>
-                    <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight max-w-[900px] mb-6">
+                    <h6 className="text-[12px] tracking-[3px] font-bold text-violet-500 uppercase mb-3">ABOUT ME</h6>
+                    <h1 className="text-[36px] md:text-[60px] font-bold tracking-tight leading-tight max-w-[900px] mb-6">
                         Designing & developing interactive web experiences.
                     </h1>
                 </div>
@@ -178,7 +178,7 @@ export default function AboutContent() {
 
                     {/* Right Column: Personal Story and Stats */}
                     <div className="lg:col-span-7 flex flex-col gap-8">
-                        <div className="flex flex-col gap-5 text-base md:text-lg leading-relaxed">
+                        <div className="flex flex-col gap-5 text-[16px] md:text-[18px] leading-relaxed">
                             <p className="font-semibold text-violet-600 dark:text-violet-400">
                                 Hello! I&apos;m Mithun BL, a dedicated Frontend Developer based in Bangalore, India, with 5+ years of hands-on experience creating modern, responsive, and performance-oriented web applications.
                             </p>
@@ -194,10 +194,10 @@ export default function AboutContent() {
 
                         {/* Direct contact details prompt */}
                         <div className="flex flex-wrap items-center gap-4 mt-2">
-                            <span className={`text-xs font-semibold ${textMuted}`}>Interested in what I do?</span>
+                            <span className={`text-[12px] font-semibold ${textMuted}`}>Interested in what I do?</span>
                             <a
                                 href="/contact-us"
-                                className="btn_black text-sm hover:scale-[0.98] transition-transform"
+                                className="btn_black text-[14px] hover:scale-[0.98] transition-transform"
                             >
                                 Let&apos;s Work Together
                             </a>

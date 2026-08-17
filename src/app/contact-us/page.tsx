@@ -11,13 +11,13 @@ export default function ContactUs() {
             <div className="container contact_container relative z-10">
                 {/* Section Header */}
                 <div className="text-center max-w-2xl mx-auto mb-14">
-                    <span className="inline-block text-xs font-bold tracking-[3px] text-violet-600 dark:text-violet-400 uppercase mb-3">
+                    <span className="inline-block text-[12px] font-bold tracking-[3px] text-violet-600 dark:text-violet-400 uppercase mb-3">
                         Get In Touch
                     </span>
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4">
+                    <h1 className="text-[36px] sm:text-[48px] md:text-[60px] font-extrabold tracking-tight mb-4">
                         Let&apos;s Build Something Together.
                     </h1>
-                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                    <p className="text-[14px] sm:text-[16px] text-gray-600 dark:text-gray-400 leading-relaxed">
                         Have a project in mind, want to collaborate, or just want to say hello? Fill out the form below and I&apos;ll get back to you promptly.
                     </p>
                 </div>
@@ -26,7 +26,7 @@ export default function ContactUs() {
                     {/* Contact Info Sidebar */}
                     <div className="lg:col-span-5 flex flex-col gap-8">
                         <div className="p-8 rounded-3xl bg-white/80 dark:bg-slate-900/60 border border-black/5 dark:border-white/10 shadow-xl backdrop-blur-md flex flex-col gap-6">
-                            <h3 className="text-xl font-bold tracking-tight">Contact Details</h3>
+                            <h3 className="text-[20px] font-bold tracking-tight">Contact Details</h3>
 
                             <div className="flex items-start gap-4">
                                 <div className="w-10 h-10 rounded-2xl bg-purple-500/10 dark:bg-purple-500/20 text-purple-600 dark:text-purple-400 flex items-center justify-center shrink-0">
@@ -35,8 +35,8 @@ export default function ContactUs() {
                                     </svg>
                                 </div>
                                 <div>
-                                    <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Email</span>
-                                    <p className="text-sm font-medium text-slate-800 dark:text-slate-200 mt-0.5">mithunbl@icloud.com</p>
+                                    <span className="text-[12px] font-semibold text-gray-400 uppercase tracking-wider">Email</span>
+                                    <p className="text-[14px] font-medium text-slate-800 dark:text-slate-200 mt-0.5">mithunbl@icloud.com</p>
                                 </div>
                             </div>
 
@@ -48,13 +48,13 @@ export default function ContactUs() {
                                     </svg>
                                 </div>
                                 <div>
-                                    <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Location</span>
-                                    <p className="text-sm font-medium text-slate-800 dark:text-slate-200 mt-0.5">Bangalore, Karnataka, India</p>
+                                    <span className="text-[12px] font-semibold text-gray-400 uppercase tracking-wider">Location</span>
+                                    <p className="text-[14px] font-medium text-slate-800 dark:text-slate-200 mt-0.5">Bangalore, Karnataka, India</p>
                                 </div>
                             </div>
 
                             <div className="pt-4 border-t border-black/5 dark:border-white/10">
-                                <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3 block">Connect Online</span>
+                                <span className="text-[12px] font-semibold text-gray-400 uppercase tracking-wider mb-3 block">Connect Online</span>
                                 <div className="flex items-center gap-3">
                                     <a
                                         href="https://github.com"

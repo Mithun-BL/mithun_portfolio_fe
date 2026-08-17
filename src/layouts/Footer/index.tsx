@@ -56,10 +56,10 @@ const Footer = () => {
                         <span className="inline-block text-[11px] font-bold tracking-[3px] text-gray-500 dark:text-gray-400 mb-3 uppercase">
                             Let&apos;s collaborate
                         </span>
-                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight leading-[1.15] mb-4">
+                        <h2 className="text-[24px] sm:text-[30px] md:text-[48px] font-bold tracking-tight leading-[1.15] mb-4">
                             Have an idea? Let&apos;s build it together.
                         </h2>
-                        <p className="text-sm md:text-base text-gray-600 dark:text-gray-400">
+                        <p className="text-[14px] md:text-[16px] text-gray-600 dark:text-gray-400">
                             Whether you want to discuss a new project, seek a consultation, or just say hello, my inbox is always open.
                         </p>
                     </div>
@@ -67,7 +67,7 @@ const Footer = () => {
                     <div className="w-full sm:w-auto flex justify-center z-10">
                         <Link
                             href="/contact-us"
-                            className="btn_black text-center text-sm w-full sm:w-auto hover:scale-98 active:scale-95 transition-all duration-300"
+                            className="btn_black text-center text-[14px] w-full sm:w-auto hover:scale-98 active:scale-95 transition-all duration-300"
                         >
                             Get in Touch
                         </Link>
@@ -81,14 +81,14 @@ const Footer = () => {
                         <Link href="/" className="text-[24px] md:text-[32px] leading-none font-bold hover:opacity-85 transition-opacity">
                             <span>Mithun BL</span>
                         </Link>
-                        <p className="text-sm leading-relaxed max-w-[360px] text-gray-600 dark:text-gray-400">
+                        <p className="text-[14px] leading-relaxed max-w-[360px] text-gray-600 dark:text-gray-400">
                             Creating premium, responsive, and highly interactive web applications with modern styling, seamless animations, and structured user experiences.
                         </p>
                     </div>
 
                     {/* Sitemap */}
                     <div className="col-span-6 md:col-span-3 flex flex-col gap-3 sm:gap-4">
-                        <h4 className="text-xs font-bold tracking-[2px] text-gray-500 dark:text-gray-400 uppercase mb-1">
+                        <h4 className="text-[12px] font-bold tracking-[2px] text-gray-500 dark:text-gray-400 uppercase mb-1">
                             Sitemap
                         </h4>
                         <ul className="flex flex-col gap-2.5">
@@ -100,7 +100,7 @@ const Footer = () => {
                                 <li key={idx}>
                                     <Link
                                         href={link.href}
-                                        className="group inline-flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-200"
+                                        className="group inline-flex items-center gap-1.5 text-[14px] font-medium text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-200"
                                     >
                                         <span>{link.label}</span>
                                     </Link>
@@ -111,7 +111,7 @@ const Footer = () => {
 
                     {/* Connect Networks */}
                     <div className="col-span-6 md:col-span-3 flex flex-col gap-4">
-                        <h4 className="text-xs font-bold tracking-[2px] text-gray-500 dark:text-gray-400 uppercase mb-1">
+                        <h4 className="text-[12px] font-bold tracking-[2px] text-gray-500 dark:text-gray-400 uppercase mb-1">
                             Connect
                         </h4>
                         <ul className="flex flex-col gap-2.5">
@@ -125,7 +125,7 @@ const Footer = () => {
                                         href={link.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="group inline-flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-200"
+                                        className="group inline-flex items-center gap-1.5 text-[14px] font-medium text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors duration-200"
                                     >
                                         <span>{link.label}</span>
                                         <svg className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -142,7 +142,7 @@ const Footer = () => {
                 <div className="w-full">
                     <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-black/10 dark:via-white/10 to-transparent mb-6 sm:mb-8" />
                     <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-                        <p className="text-xs text-gray-500 dark:text-gray-400 text-center sm:text-left">
+                        <p className="text-[12px] text-gray-500 dark:text-gray-400 text-center sm:text-left">
                             &copy; {new Date().getFullYear()} Mithun BL. All rights reserved.
                         </p>
                     </div>

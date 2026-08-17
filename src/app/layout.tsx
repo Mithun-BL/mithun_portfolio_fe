@@ -1,6 +1,8 @@
+import { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import Header from "@/layouts/Header";
 import Footer from "@/layouts/Footer";
+import defaultMetadata from "@/seo/MetaSeo";
 import "../styles/globals.css";
 
 const manrope = Manrope({
@@ -10,6 +12,7 @@ const manrope = Manrope({
   display: "swap",
 });
 
+export const metadata: Metadata = defaultMetadata;
 
 export default function RootLayout({
   children,

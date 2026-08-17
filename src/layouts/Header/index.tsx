@@ -105,9 +105,9 @@ const Header = () => {
 
                         {/* Desktop Navigation Links */}
                         <div className="hidden md:flex justify-center items-center space-x-8">
-                            <Link href="/" className={`text-sm hover:opacity-75 transition-all pb-1 border-b-2 ${isActive('/') ? 'font-extrabold border-violet-600 dark:border-violet-400 text-foreground' : 'font-medium border-transparent text-foreground/85'}`}>Home</Link>
-                            <Link href="/about-us" className={`text-sm hover:opacity-75 transition-all pb-1 border-b-2 ${isActive('/about-us') ? 'font-extrabold border-violet-600 dark:border-violet-400 text-foreground' : 'font-medium border-transparent text-foreground/85'}`}>About</Link>
-                            <Link href="/projects" className={`text-sm hover:opacity-75 transition-all pb-1 border-b-2 ${isActive('/projects') ? 'font-extrabold border-violet-600 dark:border-violet-400 text-foreground' : 'font-medium border-transparent text-foreground/85'}`}>Projects</Link>
+                            <Link href="/" className={`text-[14px] hover:opacity-75 transition-all pb-1 border-b-2 ${isActive('/') ? 'font-extrabold border-violet-600 dark:border-violet-400 text-foreground' : 'font-medium border-transparent text-foreground/85'}`}>Home</Link>
+                            <Link href="/about-us" className={`text-[14px] hover:opacity-75 transition-all pb-1 border-b-2 ${isActive('/about-us') ? 'font-extrabold border-violet-600 dark:border-violet-400 text-foreground' : 'font-medium border-transparent text-foreground/85'}`}>About</Link>
+                            <Link href="/projects" className={`text-[14px] hover:opacity-75 transition-all pb-1 border-b-2 ${isActive('/projects') ? 'font-extrabold border-violet-600 dark:border-violet-400 text-foreground' : 'font-medium border-transparent text-foreground/85'}`}>Projects</Link>
                         </div>
 
                         {/* Theme Toggle & Mobile Actions */}
@@ -117,7 +117,7 @@ const Header = () => {
 
                             {/* Desktop CTA Button */}
                             <Link
-                                className="hidden md:flex btn_black items-center justify-center text-sm font-semibold hover:scale-102 active:scale-98 transition-all duration-300"
+                                className="hidden md:flex btn_black items-center justify-center text-[14px] font-semibold hover:scale-102 active:scale-98 transition-all duration-300"
                                 href="/contact-us"
                                 style={{ padding: '12px 24px' }}
                             >
@@ -195,11 +195,11 @@ const Header = () => {
                     <Link
                         href="/contact-us"
                         onClick={() => setIsOpen(false)}
-                        className="btn_black w-full text-center py-3.5 text-base font-semibold rounded-full shadow-lg"
+                        className="btn_black w-full text-center py-3.5 text-[16px] font-semibold rounded-full shadow-lg"
                     >
                         Get in Touch
                     </Link>
-                    <p className="text-xs text-gray-400 dark:text-gray-500">
+                    <p className="text-[12px] text-gray-400 dark:text-gray-500">
                         &copy; {new Date().getFullYear()} Mithun BL. All rights reserved.
                     </p>
                 </div>

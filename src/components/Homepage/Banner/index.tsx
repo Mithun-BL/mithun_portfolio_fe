@@ -9,7 +9,7 @@ export default function HomepageBanner() {
             <div className="container banner_container relative z-10">
                 <div className="text-center max-w-[950px] mx-auto">
                     {/* Modern Pulsing Badge */}
-                    <span className="relative inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-black/10 dark:border-white/10 bg-black/[0.02] dark:bg-white/[0.02] text-xs md:text-sm font-semibold tracking-wide text-slate-800 dark:text-slate-200 backdrop-blur-md mb-8 hover:scale-[1.02] transition-transform duration-300">
+                    <span className="relative inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-black/10 dark:border-white/10 bg-black/[0.02] dark:bg-white/[0.02] text-[12px] md:text-[14px] font-semibold tracking-wide text-slate-800 dark:text-slate-200 backdrop-blur-md mb-8 hover:scale-[1.02] transition-transform duration-300">
                         <span className="flex h-2 w-2 relative">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
@@ -18,7 +18,7 @@ export default function HomepageBanner() {
                     </span>
 
                     {/* Premium Typography Heading */}
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-6 text-slate-900 dark:text-white">
+                    <h1 className="text-[36px] sm:text-[48px] md:text-[60px] lg:text-[72px] font-extrabold tracking-tight leading-[1.1] mb-6 text-slate-900 dark:text-white">
                         A passionate{" "}
                         <span className="bg-gradient-to-r from-purple-600 to-indigo-500 dark:from-purple-400 dark:to-indigo-300 bg-clip-text text-transparent">
                             web developer
@@ -30,7 +30,7 @@ export default function HomepageBanner() {
                     </h1>
 
                     {/* Subtitle / Description */}
-                    <p className="text-base sm:text-lg md:text-xl text-slate-500 dark:text-slate-400 max-w-[640px] mx-auto mb-10 leading-relaxed font-medium">
+                    <p className="text-[16px] sm:text-[18px] md:text-[20px] text-slate-500 dark:text-slate-400 max-w-[640px] mx-auto mb-10 leading-relaxed font-medium">
                         Designing and building modern digital experiences with clean code, premium aesthetics, and user-centric interactions.
                     </p>
 
