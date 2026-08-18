@@ -23,8 +23,13 @@ export default function ContactUs() {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start max-w-6xl mx-auto">
+                    {/* Contact Form Component */}
+                    <div className="md:col-span-7">
+                        <ContactForm />
+                    </div>
+
                     {/* Contact Info Sidebar */}
-                    <div className="lg:col-span-5 flex flex-col gap-8">
+                    <div className="md:col-span-5 flex flex-col gap-8">
                         <div className="p-8 rounded-3xl bg-white/80 dark:bg-slate-900/60 border border-black/5 dark:border-white/10 shadow-xl backdrop-blur-md flex flex-col gap-6">
                             <h3 className="text-[20px] font-bold tracking-tight">Contact Details</h3>
 
@@ -81,11 +86,6 @@ export default function ContactUs() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    {/* Contact Form Component */}
-                    <div className="lg:col-span-7">
-                        <ContactForm />
                     </div>
                 </div>
             </div>
